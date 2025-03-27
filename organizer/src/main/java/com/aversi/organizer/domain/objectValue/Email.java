@@ -23,7 +23,7 @@ public final class Email {
         return normalizedEmail;
     }
 
-    private boolean isValid(String email) {
+    private static boolean isValid(String email) {
         return Pattern.matches(
                 "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$",
                 email);
